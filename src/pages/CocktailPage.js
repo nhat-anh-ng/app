@@ -73,33 +73,45 @@ export default function CocktailPage() {
     } = cocktail;
     return (
       <section className="section cocktail-section">
-        <Link to="/" className="btn btn-primary">
-          back home
-        </Link>
-        <h2 className="section-title">{name}</h2>
         <div className="drink">
-          <img src={image} alt={name}></img>
+          <div>
+            <h2 className="section-title">{name}</h2>
+            <img src={image} alt={name}></img>
+
+            <Link to="/" className="btn btn-white">
+              back home
+            </Link>
+          </div>
+
           <div className="drink-info">
             <p>
-              <span className="drink-data">name :</span> {name}
+              name :<span className="drink-data">{name}</span>
             </p>
             <p>
-              <span className="drink-data">category :</span> {category}
+              category :<span className="drink-data"> {category}</span>
             </p>
             <p>
-              <span className="drink-data">info :</span> {info}
+              info :<span className="drink-data">{info}</span>
             </p>
             <p>
-              <span className="drink-data">glass :</span> {glass}
+              glass :<span className="drink-data"> {glass}</span>
+            </p>
+
+            <p>
+              ingredients :
+              <span>
+                {ingredients.map((item, index) => {
+                  return item ? (
+                    <span className="drink-data" key={index}>
+                      {" "}
+                      {item}
+                    </span>
+                  ) : null;
+                })}
+              </span>
             </p>
             <p>
-              <span className="drink-data">instructons :</span> {instructions}
-            </p>
-            <p>
-              <span className="drink-data">ingredients :</span>
-              {ingredients.map((item, index) => {
-                return item ? <span key={index}> {item}</span> : null;
-              })}
+              instructons :<span> {instructions}</span>
             </p>
           </div>
         </div>
