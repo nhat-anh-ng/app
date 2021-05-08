@@ -4,22 +4,23 @@ Variables
 ======
 */
 :root {
-  --primaryLightColor: #d4e6a5;
-  --primaryColor: #476a2e;
+  --primaryLightColor: #ffffff;
+  --primaryColor: #4c2364;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBackground: #f1f5f8;
+  --mainBackground: #4c2364;
   --mainOverlay: rgba(35, 10, 36, 0.4);
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-  --mainBorderRadius: 0.25rem;
+  --mainSpacing: 0.2rem;
+  --lightShadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 1.5rem;
+  --smallBorderRadius: 0.5rem;
   --smallWidth: 85vw;
   --maxWidth: 40rem;
   --fullWidth: 1170px;
@@ -80,14 +81,14 @@ Buttons
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
+  border: solid var(--primaryColor);
   padding: 0.45rem 0.8rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
   font-size: 0.8rem;
   background: transparent;
-  border-radius: var(--mainBorderRadius);
+  border-radius: var(--smallBorderRadius);
   display: inline-block;
 }
 .btn:hover {
@@ -211,7 +212,7 @@ Cocktails List
   letter-spacing: var(--mainSpacing);
   text-align: center;
   margin-bottom: 3.5rem;
-  margin-top: 1rem;
+  color: var(--mainWhite);
 }
 .cocktails-center {
   width: var(--smallWidth);
@@ -272,7 +273,6 @@ Form
 ======
 */
 .search {
-  margin-top: 1rem;
   padding-bottom: 0;
 }
 
@@ -281,25 +281,25 @@ Form
   margin: 0 auto;
   max-width: var(--maxWidth);
   background: var(--mainWhite);
-  padding: 2rem 2.5rem;
+  padding: 2rem 2rem;
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);
   box-shadow: var(--lightShadow);
 }
 
 .form-control label {
+  text-align: center;
   display: block;
   margin-bottom: 1.25rem;
   font-weight: bold;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
   color: var(--primaryColor);
 }
 .form-control input {
   width: 100%;
-  border: none;
-  border-color: transparent;
-  background: var(--mainBackground);
-  border-radius: var(--mainBorderRadius);
+  border-color: var(--primaryColor);
+  background: var(--mainWhite);
+  border-radius: 0.5rem;
   padding: 0.5rem;
   font-size: 1.2rem;
 }

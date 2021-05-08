@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
