@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="section about-section">
       <h1 className="section-title">
-        Coctailly <br /> is a perfect search <br /> for your favourite coctail !
+        Coctailly has a list of ingredients for your favourite coctail !
       </h1>
     </section>
   );

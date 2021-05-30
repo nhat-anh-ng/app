@@ -5,7 +5,7 @@ Variables
 */
 :root {
   --primaryLightColor: #ffffff;
-  --primaryColor: #214421;
+  --primaryColor: #eb8e14;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -212,7 +212,7 @@ Cocktails List
 }
 .section-title {
   font-size: 2rem;
-  text-transform: capitalize;
+  text-align: center;
   letter-spacing: var(--mainSpacing);
   padding-left: 0.1rem;
   margin-bottom: 0.5rem;
@@ -329,7 +329,7 @@ Cocktail
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.8;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .drink span {
   margin-right: 0.5rem;
@@ -343,7 +343,7 @@ Cocktail
 .drink-info {
   padding: 1rem 0rem 0.5rem 0rem;
   border-radius: 1rem;
-  background-color: var(--mainWhite);
+  background-color: transparent;
 }
 @media screen and (min-width: 992px) {
   .drink {

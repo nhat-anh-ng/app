@@ -62,15 +62,8 @@ export default function CocktailPage() {
   if (!cocktail) {
     return <h2 className="section-title">no cocktail to display</h2>;
   } else {
-    const {
-      name,
-      image,
-      category,
-      info,
-      glass,
-      instructions,
-      ingredients,
-    } = cocktail;
+    const { name, image, category, info, glass, instructions, ingredients } =
+      cocktail;
     return (
       <section className="section cocktail-section">
         <div className="drink">
@@ -85,33 +78,26 @@ export default function CocktailPage() {
 
           <div className="drink-info">
             <p>
-              name :<span className="drink-data">{name}</span>
+              <span className="drink-data"> name : {name}</span>
             </p>
             <p>
-              category :<span className="drink-data"> {category}</span>
+              <span className="drink-data"> category : {category}</span>
             </p>
             <p>
-              info :<span className="drink-data">{info}</span>
+              <span className="drink-data"> info : {info}</span>
             </p>
             <p>
-              glass :<span className="drink-data"> {glass}</span>
+              <span className="drink-data">glass : {glass}</span>
             </p>
 
             <p>
-              ingredients :
-              <span>
+              <span className="drink-data">
+                {" "}
+                ingredients :
                 {ingredients.map((item, index) => {
-                  return item ? (
-                    <span className="drink-data" key={index}>
-                      {" "}
-                      {item}
-                    </span>
-                  ) : null;
+                  return item ? <span key={index}> {item}</span> : null;
                 })}
               </span>
-            </p>
-            <p>
-              instructons :<span> {instructions}</span>
             </p>
           </div>
         </div>
